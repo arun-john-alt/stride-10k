@@ -10,4 +10,11 @@ for(const v of ['null','[]','invalid'])assert.match(boot(v).els.progressValue.in
 app.run("state['w2-mon']={date:'2026-11-10',status:'done',distance:'4.25',duration:'40',notes:'saved progress'};save()");let restored=boot(app.saved());assert.equal(restored.run("state['w2-mon'].notes"),'saved progress');assert.equal(restored.run("state['w2-mon'].date"),'2026-11-10');assert.match(restored.els.progressValue.innerHTML,/3 /);
 let bad=boot(JSON.stringify({'w1-mon':{date:'<img src=x>',status:'evil',distance:'Infinity',duration:-1,notes:'<b>text</b>'}}));assert.equal(bad.run("state['w1-mon'].date"),'2026-10-30');assert.equal(bad.run("state['w1-mon'].distance"),'');
 let complete=boot(null);complete.run("PLAN.forEach(x=>state[x.id].status='done');render()");assert.match(complete.els.next.innerHTML,/You reached the finish line/);let skipped=boot(null);skipped.run("PLAN.forEach(x=>state[x.id].status='skipped');render()");assert.match(skipped.els.next.innerHTML,/Every session accounted for/);assert(!skipped.els.next.innerHTML.includes('You reached the finish line'));assert.match(skipped.els.activityList.innerHTML,/Your first session starts here/);
-console.log('PASS: JS syntax, 40 sessions / 8 weeks, Zepp defaults, 7 timed guides, distance guide, malformed storage, date/metric validation, persistence.');
+// Programme follows recorded dates, including rescheduled workouts and later edits.
+const datesInProgramme=app=>[...app.els.sessions.innerHTML.matchAll(/class="session-date">([^<]+)/g)].map(m=>m[1]);
+let chronological=boot(null);
+assert.deepEqual(datesInProgramme(chronological),['Fri, 30 Oct · Plan: Monday','Mon, 2 Nov · Plan: Thursday','Tue, 3 Nov · Plan: Tuesday','Fri, 6 Nov · Plan: Friday','Sat, 7 Nov · Plan: Saturday']);
+chronological.run("state['w1-fri'].date='2026-10-29';save();render()");
+assert.equal(datesInProgramme(chronological)[0],'Thu, 29 Oct · Plan: Friday');
+assert.equal(datesInProgramme(boot(chronological.saved()))[0],'Thu, 29 Oct · Plan: Friday');
+console.log('PASS: JS syntax, 40 sessions / 8 weeks, Zepp defaults, 7 timed guides, distance guide, malformed storage, date/metric validation, persistence, chronological programme order.');
