@@ -35,3 +35,5 @@ Designed with [Impeccable](https://github.com/pbakaus/impeccable). The cobalt Ra
 Never commit personal backups, credentials, or raw activity files. `.gitignore` excludes common forms of these files. The template distribution contains no browser storage or personal exports.
 
 Cleanup guidance: [Unslop](https://github.com/heydamir/unslop) by Damir Sokolovsky (@heydamir), licensed CC BY 4.0.
+
+The custom running logo is included in the header and embedded SVG favicon. Hosted files also include `favicon.ico` and `apple-touch-icon.png`.

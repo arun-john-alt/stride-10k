@@ -183,3 +183,7 @@ The paper dialog sits over a blue scrim. Opening it focuses the first field, tra
 ### Don't:
 - **Don't** treat a completed fill as the only indication of session status.
 - **Don't** add raised card shadows to ordinary session records.
+
+## Brand mark
+
+An authored forward-running figure pairs with the Stride 10K wordmark. The header uses cobalt strokes on a lime tile (40px desktop, 34px mobile, 32px narrow screens); the favicon reverses to lime on cobalt. Its simple rounded strokes stay readable at tab sizes. The SVG favicon is embedded in the standalone HTML, with ICO and Apple touch PNG fallbacks for the hosted version.
