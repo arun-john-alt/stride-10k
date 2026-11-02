@@ -8,7 +8,7 @@ web
 
 ## Users
 
-The user follows an eight-week 10K plan and records completed sessions. Mobile usability is required.
+Anyone can start an eight-week 10K plan and record their own sessions locally. Mobile usability is required.
 
 ## Product Purpose
 
@@ -20,7 +20,7 @@ Public static GitHub Pages app at https://arun-john-alt.github.io/stride-10k/. U
 
 ## Capabilities and Constraints
 
-40 scheduled running and cross-training sessions over eight weeks, recovery reminders, run/walk guides, editable dates, status, distance, duration, notes, JSON backup/restore, and CSV export. Keep the two supplied Zepp summaries exactly. Preserve the tenk-tracker-v1 localStorage key and existing saved progress. Storage is per browser and origin, with no cross-device synchronization. No raw TCX, credentials, or sensitive backups may be published. Retain static HTML/CSS/JS and GitHub Pages deployment.
+40 scheduled running and cross-training sessions over eight weeks, recovery reminders, run/walk guides, editable dates, status, distance, duration, notes, JSON backup/restore, and CSV export. Start with all 40 sessions pending and no preloaded personal workout data. Let users choose their own first session date. Preserve the tenk-tracker-v1 localStorage key and existing saved progress. Storage is per browser and origin, with no cross-device synchronization. No raw TCX, credentials, or sensitive backups may be published. Retain static HTML/CSS/JS and GitHub Pages deployment.
 
 ## Brand Commitments
 
@@ -28,7 +28,7 @@ Name: Stride. The user requested a redesign using the Impeccable GitHub reposito
 
 ## Evidence on Hand
 
-index.html holds the 40-session plan and the two approved summaries; README.md documents privacy and backup behavior; tests/smoke.cjs verifies plan integrity and storage. No testimonial, commercial claim, or coaching outcome is provided.
+index.html holds the 40-session plan with blank log defaults; README.md documents privacy and backup behavior; tests/smoke.cjs verifies plan integrity and storage. No testimonial, commercial claim, or coaching outcome is provided.
 
 ## Product Principles
 

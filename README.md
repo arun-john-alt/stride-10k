@@ -1,27 +1,35 @@
-# Stride — Road to 10K
+# Stride — clean 10K training template
 
-[Open Stride](https://arun-john-alt.github.io/stride-10k/)
+[Use Stride](https://arun-john-alt.github.io/stride-10k/)
 
-A mobile-first eight-week 10K training tracker redesigned with the [Impeccable skill](https://github.com/pbakaus/impeccable). Today puts the next workout and Log session first; Programme exposes all eight weeks; Activity reviews completed workouts. The cobalt Race programme direction uses a self-hosted Albert Sans font (see THIRD_PARTY_LICENSES.txt).
+A reusable, mobile-friendly eight-week training plan with **40 unlogged sessions**. New browsers start with zero completed sessions, distance and recorded time. There are no preloaded personal workouts or summary metrics.
 
-Includes all 40 scheduled sessions: running, cross-training, interval recovery, and separate rest-day reminders. Includes run/walk guides, editable dates and completion logs, JSON backup/restore, and CSV exports. Distance-based sessions retain their prescribed targets without invented time estimates.
+## Start your own plan
 
-## Your progress
+1. Open the app and choose **Change start date** (also available in Settings).
+2. Choose your first session date. Pick a Monday to align the original programme's weekday labels.
+3. Apply the date, then log each workout on your own device.
 
-The two supplied Zepp workout summaries (30 October and 2 November 2026) are preloaded. The original plan's weekday names remain visible even when an actual workout date differs. Duration values use decimal minutes.
+The plan includes running, cross-training, interval recovery and rest-day reminders. Today shows the next planned workout; Programme lists each week's sessions by recorded date; Activity shows completed workouts. You can edit dates, status, distance, duration and notes. Duration values use decimal minutes. Changing the start date reschedules planned sessions only; recorded completed or skipped entries stay unchanged.
 
-Progress uses the existing `tenk-tracker-v1` localStorage key, preserving compatible saved entries on the same origin. It is saved only in the current browser profile and device and **does not sync across devices** or to GitHub. Private browsing, clearing site data, or unavailable browser storage can lose progress. Use **Backup**, then **Settings → Import backup** on another device to transfer it. Exporting CSV provides a readable log; JSON is the restore format. Import replaces matching valid entries after confirmation.
+## Local data and backups
 
-Moving from a local file or another preview URL to GitHub Pages creates a different browser origin. Export from the old app and import into the live site to carry existing progress across.
+Each browser profile and device keeps its own progress in localStorage. Logs are **not uploaded to GitHub or synced between devices**. There is no account, analytics, cloud database or external font request. Other people using this website cannot see your local logs through the app.
 
-## Privacy
+Use **Backup**, or **Settings → Export backup**, to download your own JSON backup. Use **Settings → Import backup** to restore a Stride JSON backup on another browser or device. Settings → Start fresh clears this browser’s log after confirmation. CSV export provides a readable log; JSON is the restore format. The importer accepts Stride backup JSON, not arbitrary TCX or fitness-app files. Backups include your personal notes and metrics: keep them private.
 
-The public source intentionally includes the two supplied summaries: workout dates, distance, duration, average/maximum heart rate, calories, and pace. No raw TCX, GPS tracks, credentials, or personal backup exports are included. User-entered progress stays in the browser until explicitly exported. The app has no analytics, external fonts, API calls, or account backend. GitHub Pages serves the static app.
+Clearing site data or using private browsing can remove progress. Moving from the hosted app to a local copy creates a different storage location: export and import a backup to transfer your progress. Existing compatible saved progress on this same origin is preserved when the template updates.
 
-Never commit raw activity files, credentials, or personal training exports. `.gitignore` excludes common forms of these files; review every staged file before pushing. The deployment workflow publishes only `index.html`.
+## Run your own copy
 
-## Development and deployment
+Unzip the template, serve its folder with `python3 -m http.server 8000`, and open `http://localhost:8000`. Use the same address and port on later visits to keep the same browser storage. You can open `index.html` directly, but persistence for `file:` URLs varies between browsers; serving it locally is more reliable.
 
-No build or runtime dependencies. Serve with `python3 -m http.server 8000`, then open `http://localhost:8000`. Run `node tests/smoke.cjs` for JS syntax, plan integrity, interval timing, storage validation, and persistence checks.
+You can also host the static file on GitHub Pages or another static host. No build or installation is needed. The included GitHub Actions workflow tests and publishes only `index.html` from `main`; enable GitHub Actions under repository Settings → Pages.
 
-The GitHub Actions workflow tests and deploys every push to `main`. Repository Settings → Pages must use **GitHub Actions**. Production: https://arun-john-alt.github.io/stride-10k/.
+## Development
+
+Run `node tests/smoke.cjs` for JavaScript syntax, blank defaults, plan integrity, guides, date validation, chronology and saved-progress compatibility.
+
+Designed with [Impeccable](https://github.com/pbakaus/impeccable). The cobalt Race programme design uses embedded Albert Sans; its license is included in the HTML and THIRD_PARTY_LICENSES.txt. DESIGN.md records the visual system.
+
+Never commit personal backups, credentials, or raw activity files. `.gitignore` excludes common forms of these files. The template distribution contains no browser storage or personal exports.
