@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T06:03:19.941778+00:00",
+  "title": "Design System: Stride",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Blue",
+        "tonalRamp": [
+          "oklch(15% 0.0516 265.64)",
+          "oklch(27% 0.1289 265.64)",
+          "oklch(39% 0.2063 265.64)",
+          "oklch(51% 0.2578 265.64)",
+          "oklch(63% 0.2578 265.64)",
+          "oklch(75% 0.2063 265.64)",
+          "oklch(87% 0.1289 265.64)",
+          "oklch(95% 0.0516 265.64)"
+        ]
+      },
+      "blue-hover": {
+        "role": "primary",
+        "displayName": "Blue Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0462 265.59)",
+          "oklch(27% 0.1156 265.59)",
+          "oklch(39% 0.1850 265.59)",
+          "oklch(51% 0.2312 265.59)",
+          "oklch(63% 0.2312 265.59)",
+          "oklch(75% 0.1850 265.59)",
+          "oklch(87% 0.1156 265.59)",
+          "oklch(95% 0.0462 265.59)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0013 106.52)",
+          "oklch(27% 0.0033 106.52)",
+          "oklch(39% 0.0053 106.52)",
+          "oklch(51% 0.0066 106.52)",
+          "oklch(63% 0.0066 106.52)",
+          "oklch(75% 0.0053 106.52)",
+          "oklch(87% 0.0033 106.52)",
+          "oklch(95% 0.0013 106.52)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0040 144.78)",
+          "oklch(27% 0.0099 144.78)",
+          "oklch(39% 0.0158 144.78)",
+          "oklch(51% 0.0198 144.78)",
+          "oklch(63% 0.0198 144.78)",
+          "oklch(75% 0.0158 144.78)",
+          "oklch(87% 0.0099 144.78)",
+          "oklch(95% 0.0040 144.78)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0046 140.46)",
+          "oklch(27% 0.0114 140.46)",
+          "oklch(39% 0.0182 140.46)",
+          "oklch(51% 0.0228 140.46)",
+          "oklch(63% 0.0228 140.46)",
+          "oklch(75% 0.0182 140.46)",
+          "oklch(87% 0.0114 140.46)",
+          "oklch(95% 0.0046 140.46)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0029 128.65)",
+          "oklch(27% 0.0073 128.65)",
+          "oklch(39% 0.0117 128.65)",
+          "oklch(51% 0.0146 128.65)",
+          "oklch(63% 0.0146 128.65)",
+          "oklch(75% 0.0117 128.65)",
+          "oklch(87% 0.0073 128.65)",
+          "oklch(95% 0.0029 128.65)"
+        ]
+      },
+      "soft-blue": {
+        "role": "neutral",
+        "displayName": "Soft Blue",
+        "tonalRamp": [
+          "oklch(15% 0.0052 274.11)",
+          "oklch(27% 0.0131 274.11)",
+          "oklch(39% 0.0209 274.11)",
+          "oklch(51% 0.0262 274.11)",
+          "oklch(63% 0.0262 274.11)",
+          "oklch(75% 0.0209 274.11)",
+          "oklch(87% 0.0131 274.11)",
+          "oklch(95% 0.0052 274.11)"
+        ]
+      },
+      "lime": {
+        "role": "primary",
+        "displayName": "Lime",
+        "tonalRamp": [
+          "oklch(15% 0.0271 115.79)",
+          "oklch(27% 0.0678 115.79)",
+          "oklch(39% 0.1085 115.79)",
+          "oklch(51% 0.1356 115.79)",
+          "oklch(63% 0.1356 115.79)",
+          "oklch(75% 0.1085 115.79)",
+          "oklch(87% 0.0678 115.79)",
+          "oklch(95% 0.0271 115.79)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(27% 0.0000 89.88)",
+          "oklch(39% 0.0000 89.88)",
+          "oklch(51% 0.0000 89.88)",
+          "oklch(63% 0.0000 89.88)",
+          "oklch(75% 0.0000 89.88)",
+          "oklch(87% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "skipped-bg": {
+        "role": "neutral",
+        "displayName": "Skipped Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0052 82.38)",
+          "oklch(27% 0.0131 82.38)",
+          "oklch(39% 0.0210 82.38)",
+          "oklch(51% 0.0262 82.38)",
+          "oklch(63% 0.0262 82.38)",
+          "oklch(75% 0.0210 82.38)",
+          "oklch(87% 0.0131 82.38)",
+          "oklch(95% 0.0052 82.38)"
+        ]
+      },
+      "skipped-text": {
+        "role": "neutral",
+        "displayName": "Skipped Text",
+        "tonalRamp": [
+          "oklch(15% 0.0172 69.93)",
+          "oklch(27% 0.0430 69.93)",
+          "oklch(39% 0.0688 69.93)",
+          "oklch(51% 0.0860 69.93)",
+          "oklch(63% 0.0860 69.93)",
+          "oklch(75% 0.0688 69.93)",
+          "oklch(87% 0.0430 69.93)",
+          "oklch(95% 0.0172 69.93)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Workout title",
+        "purpose": "Next-workout heading; 53px on phones, 46px below 350px."
+      },
+      "body": {
+        "displayName": "Descriptions",
+        "purpose": "Readable session copy; maximum 65ch."
+      }
+    },
+    "shadows": [
+      {
+        "name": "dialog",
+        "value": "0 16px 48px #11204e26",
+        "purpose": "Modal elevation."
+      },
+      {
+        "name": "toast",
+        "value": "0 6px 22px #111c3026",
+        "purpose": "Temporary feedback above navigation."
+      },
+      {
+        "name": "day-hover",
+        "value": "inset 0 0 0 1px currentColor",
+        "purpose": "Day-tile hover outline."
+      }
+    ],
+    "motion": [
+      {
+        "name": "toast-transition",
+        "value": "opacity .18s ease,transform .18s ease",
+        "purpose": "Toast entry and exit; removed under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "shell",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile",
+        "value": "600px"
+      },
+      {
+        "name": "narrow",
+        "value": "350px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Default commit action on paper.",
+      "html": "<button class=\"ds-primary\">Save session</button>",
+      "css": ".ds-primary{font-family:Programme,Arial,sans-serif;min-height:44px;border:0;background:var(--blue,#183be9);color:#fff;border-radius:var(--radius,5px);padding:12px 17px;font-size:14px;font-weight:700;cursor:pointer}.ds-primary:hover{background:var(--blue-hover,#1230c8)}.ds-primary:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
+    },
+    {
+      "name": "Log session",
+      "kind": "button",
+      "refersTo": "button-log",
+      "description": "Wide logging action used in the cobalt workout field.",
+      "html": "<button class=\"ds-log\">Log session <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-log{font-family:Programme,Arial,sans-serif;width:100%;min-height:54px;padding:14px 18px;background:var(--lime,#efff91);color:#17230d;border:0;border-radius:4px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:17px;font-weight:750;cursor:pointer}.ds-log svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-log:hover{background:#e1f574}.ds-log:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined supporting action.",
+      "html": "<button class=\"ds-secondary\">View guide</button>",
+      "css": ".ds-secondary{font-family:Programme,Arial,sans-serif;min-height:44px;padding:11px 14px;font-size:13px;font-weight:600;background:transparent;border:1px solid #adb8a5;border-radius:var(--radius,5px);color:var(--ink,#101810);cursor:pointer}.ds-secondary:hover{background:#e8ece1}.ds-secondary:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
+    },
+    {
+      "name": "Distance field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Metric entry with native numeric validity.",
+      "html": "<label class=\"ds-field\">Distance (km)<input type=\"number\" min=\"0\" step=\"0.01\" placeholder=\"Optional\"></label>",
+      "css": ".ds-field{font-family:Programme,Arial,sans-serif;display:block;margin:14px 0;font-size:13px;font-weight:600;color:#3b4833}.ds-field input{font-family:Programme,Arial,sans-serif;display:block;width:100%;min-height:46px;padding:11px 12px;background:#fff;border:1px solid #aeb9a6;border-radius:4px;color:var(--ink,#101810);margin-top:7px;font-size:16px;font-weight:400;caret-color:var(--blue,#183be9)}.ds-field input::placeholder{color:#626e5a}.ds-field input:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
+    },
+    {
+      "name": "Day tile",
+      "kind": "card",
+      "refersTo": "day",
+      "description": "Completed variant of the five-session preview tile.",
+      "html": "<button class=\"ds-day\"><span>Mon</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"/></svg><span>Run</span></button>",
+      "css": ".ds-day{font-family:Programme,Arial,sans-serif;min-height:100px;min-width:90px;border:1px solid #d0d9ff;border-radius:4px;background:var(--soft-blue,#e7ecff);display:flex;align-items:center;flex-direction:column;justify-content:center;gap:8px;color:var(--blue,#183be9);padding:10px 4px;font-size:12px;cursor:pointer}.ds-day svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-day:hover{box-shadow:inset 0 0 0 1px currentColor}.ds-day:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
+    },
+    {
+      "name": "Session status",
+      "kind": "chip",
+      "refersTo": "status",
+      "description": "Noninteractive completed-session label.",
+      "html": "<span class=\"ds-status\">Completed</span>",
+      "css": ".ds-status{font-family:Programme,Arial,sans-serif;display:inline-flex;font-size:11px;font-weight:600;color:#1736bc;background:var(--soft-blue,#e7ecff);padding:5px 8px;border-radius:3px;white-space:nowrap}"
+    },
+    {
+      "name": "Programme tabs",
+      "kind": "nav",
+      "description": "Horizontally scrollable week selection with completion counts.",
+      "html": "<nav class=\"ds-weeks\" aria-label=\"Training weeks\"><button aria-pressed=\"true\"><strong>Week 01</strong><small>2 / 5 done</small></button><button aria-pressed=\"false\"><strong>Week 02</strong><small>0 / 5 done</small></button></nav>",
+      "css": ".ds-weeks{display:flex;gap:7px;overflow-x:auto;padding:4px 4px 10px}.ds-weeks button{font-family:Programme,Arial,sans-serif;min-height:44px;background:transparent;border:1px solid var(--line,#d3d8ce);border-radius:4px;color:var(--muted,#535d51);padding:11px 10px;text-align:left;flex:1;min-width:92px;cursor:pointer}.ds-weeks strong{display:block;color:var(--ink,#101810);font-size:14px;font-weight:650}.ds-weeks small{font-size:11px}.ds-weeks button:hover{background:#ecefe6}.ds-weeks button[aria-pressed=true]{background:var(--blue,#183be9);color:#dce5ff;border-color:var(--blue,#183be9)}.ds-weeks button[aria-pressed=true] strong{color:#fff}.ds-weeks button:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Race programme",
+    "overview": "A compact, energetic training companion. Strong cobalt fields, warm paper, confident Albert Sans and a pale lime action give the interface the directness of a race programme. Information stays compact and readable; crisp rules separate supporting records.",
+    "keyCharacteristics": [
+      "Cobalt fields with a lime logging action.",
+      "Compact typography with large, tightly spaced workout titles.",
+      "Flat surfaces, small corners and clear state changes."
+    ],
+    "rules": [
+      {
+        "name": "The State Has Words Rule",
+        "body": "Pair status color with a visible status label or an accessible session description.",
+        "section": "colors"
+      },
+      {
+        "name": "The Compact Week Rule",
+        "body": "Keep the five-session preview on one row, using concise labels and authored SVG marks.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "**Do** use the embedded Albert Sans family through its Programme alias.",
+      "**Do** keep supporting surfaces flat and separate records with crisp rules.",
+      "**Do** retain visible keyboard focus and textual status information.",
+      "**Do** preserve mobile target sizes and clearance above bottom navigation."
+    ],
+    "donts": [
+      "**Don't** treat a completed fill as the only indication of session status.",
+      "**Don't** add raised card shadows to ordinary session records."
+    ]
+  }
+}

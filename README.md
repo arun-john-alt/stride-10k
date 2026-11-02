@@ -2,7 +2,9 @@
 
 [Open Stride](https://arun-john-alt.github.io/stride-10k/)
 
-A mobile-first eight-week 10K training tracker with all 40 scheduled sessions: running, cross-training, interval recovery, and separate rest-day reminders. Includes run/walk guides, editable dates and completion logs, JSON backup/restore, and CSV exports. Distance-based sessions retain their prescribed targets without invented time estimates.
+A mobile-first eight-week 10K training tracker redesigned with the [Impeccable skill](https://github.com/pbakaus/impeccable). Today puts the next workout and Log session first; Programme exposes all eight weeks; Activity reviews completed workouts. The cobalt Race programme direction uses a self-hosted Albert Sans font (see THIRD_PARTY_LICENSES.txt).
+
+Includes all 40 scheduled sessions: running, cross-training, interval recovery, and separate rest-day reminders. Includes run/walk guides, editable dates and completion logs, JSON backup/restore, and CSV exports. Distance-based sessions retain their prescribed targets without invented time estimates.
 
 ## Your progress
 
