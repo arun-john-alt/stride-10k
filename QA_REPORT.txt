@@ -1,0 +1,76 @@
+STRIDE — CLEANUP AND QA REPORT
+2 November 2026
+
+RESULT
+No blocking issue remained in the tested flows. Public template defaults remain
+40 planned sessions, zero logged distance/time, and no preloaded personal workouts.
+The complete 40-session plan definition is unchanged.
+
+INTERFACE CLEANUP
+- Removed repeated helper paragraphs, the explanatory footer, the Programme
+  tagline, and original-plan weekday labels that could conflict with actual dates.
+- Short workout summaries lead; full prescribed instructions remain under View guide.
+- Schedule setup and the single local-data explanation are inside Settings.
+- Settings is a visible text button. Schedule, Backups and Reset are grouped.
+- Increased functional metadata readability, reduced heading weight, and retained
+  the chosen cobalt/paper/lime identity and five-session weekly overview.
+
+FUNCTIONAL DEFECTS FIXED
+- Imported files are validated completely before any entries are replaced.
+  Invalid dates/status/metrics/notes and backups without recognized sessions fail
+  without partial mutation. Oversized files are rejected before parsing.
+- Storage failures no longer get overwritten by a success message. A persistent
+  alert asks the user to export a backup if local saving fails.
+- Rest-day names follow the chosen start date, including starts on other weekdays.
+- Number totals handle scientific notation correctly rather than using parseFloat.
+- Start dates must support the complete eight-week schedule; year zero is rejected.
+- Dates include their year. Programme rows remain sorted by their actual dates.
+- Numeric entry supports decimals and Enter submits the workout form.
+- CSV notes beginning with formula characters, including leading whitespace, are
+  neutralized; the original weekday column is clearly named plan_day.
+- UTF-8 is declared early enough for standalone local-file rendering.
+
+AUTOMATED CHECKS — PASSED
+JavaScript syntax; 40 distinct sessions / eight weeks; blank defaults; preserved
+saved progress; malformed storage fallback; all seven timed interval guides;
+distance-only instructions; date validity and schedule boundaries; pending-only
+rescheduling; shifted recovery weekdays; chronological sorting after edits and
+reload; completed/skipped/empty states; full/legacy backup parsing; invalid import
+rejection; escaped notes; CSV formula protection; simulated blocked storage and
+persistent feedback; numeric exponent totals; compact workout summary accuracy.
+Command: node tests/smoke.cjs
+
+BROWSER CHECKS — PASSED
+- Today, Programme and Activity navigation; all eight weeks / five sessions each.
+- Opened every one of the 40 workout guides; timed and distance instructions visible.
+- Logging, editing, zero values, negative-value rejection, higher-precision decimals,
+  Enter-to-save, skipped sessions, and reload persistence.
+- Notes containing HTML-like text remain text; 2,418-character multiline notes
+  survived saving/reload and did not cause horizontal dialog overflow.
+- Start-date editing preserves recorded sessions; invalid/empty start date rejected.
+- JSON export contained 40 sessions, start date, zero values and notes.
+- CSV export contained header plus 40 rows and safe quoted note text.
+- Full restore and partial restore; import cancellation preserved current entries.
+- Mixed valid/invalid backup rejected with existing progress unchanged.
+- Oversized backup rejected with a readable inline error.
+- Reset cancellation preserved progress; confirmed reset returned to 0/40.
+- Tab/Shift+Tab trap, Escape close, focus return and inert background in dialogs.
+- Layout widths 320, 390, 679 and 1280 pixels: no horizontal page overflow.
+  Tested visible buttons, including narrow-screen Settings, were at least 44px high.
+- Content below the fixed navigation remains reachable by scrolling.
+- Main text/action contrast pairs met 4.5:1 (checked pairs ranged 6.32:1–15.11:1).
+- No browser console errors or warnings were captured in the local QA session.
+- No remote font/API/analytics asset requests in app source; no raw TCX, GPS tracks,
+  credentials or personal exports included in the template.
+
+SCOPE AND LIMITS
+Browser interaction was tested in the Codex in-app Chromium browser with responsive
+viewport overrides. Real iOS/Android devices, Safari, Firefox and screen-reader
+speech output were not exercised. Blocked storage was simulated in the regression
+suite; this is not a formal accessibility or security certification.
+The favicon/logo option selection remains separate from this cleanup.
+
+DESIGN GUIDANCE
+Light-polish pass using Unslop by Damir Sokolovsky (@heydamir), CC BY 4.0:
+https://github.com/heydamir/unslop
+The existing Impeccable Race programme identity was retained.

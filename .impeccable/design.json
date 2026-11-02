@@ -162,7 +162,7 @@
     "typographyMeta": {
       "display": {
         "displayName": "Workout title",
-        "purpose": "Next-workout heading; 53px on phones, 46px below 350px."
+        "purpose": "Next-workout heading; 44px on phones, 40px below 350px."
       },
       "body": {
         "displayName": "Descriptions",
@@ -172,12 +172,12 @@
     "shadows": [
       {
         "name": "dialog",
-        "value": "0 16px 48px #11204e26",
+        "value": "0 8px 24px #10181014",
         "purpose": "Modal elevation."
       },
       {
         "name": "toast",
-        "value": "0 6px 22px #111c3026",
+        "value": "0 4px 16px #1018101a",
         "purpose": "Temporary feedback above navigation."
       },
       {
@@ -215,7 +215,7 @@
       "refersTo": "button-primary",
       "description": "Default commit action on paper.",
       "html": "<button class=\"ds-primary\">Save session</button>",
-      "css": ".ds-primary{font-family:Programme,Arial,sans-serif;min-height:44px;border:0;background:var(--blue,#183be9);color:#fff;border-radius:var(--radius,5px);padding:12px 17px;font-size:14px;font-weight:700;cursor:pointer}.ds-primary:hover{background:var(--blue-hover,#1230c8)}.ds-primary:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
+      "css": ".ds-primary{font-family:Programme,Arial,sans-serif;min-height:44px;border:0;background:var(--blue,#183be9);color:#fff;border-radius:var(--radius,5px);padding:12px 17px;font-size:14px;font-weight:600;cursor:pointer}.ds-primary:hover{background:var(--blue-hover,#1230c8)}.ds-primary:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
     },
     {
       "name": "Log session",
@@ -223,7 +223,7 @@
       "refersTo": "button-log",
       "description": "Wide logging action used in the cobalt workout field.",
       "html": "<button class=\"ds-log\">Log session <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></button>",
-      "css": ".ds-log{font-family:Programme,Arial,sans-serif;width:100%;min-height:54px;padding:14px 18px;background:var(--lime,#efff91);color:#17230d;border:0;border-radius:4px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:17px;font-weight:750;cursor:pointer}.ds-log svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-log:hover{background:#e1f574}.ds-log:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
+      "css": ".ds-log{font-family:Programme,Arial,sans-serif;width:100%;min-height:54px;padding:14px 18px;background:var(--lime,#efff91);color:#17230d;border:0;border-radius:4px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:17px;font-weight:600;cursor:pointer}.ds-log svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-log:hover{background:#e1f574}.ds-log:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
     },
     {
       "name": "Secondary button",
@@ -231,14 +231,14 @@
       "refersTo": "button-secondary",
       "description": "Outlined supporting action.",
       "html": "<button class=\"ds-secondary\">View guide</button>",
-      "css": ".ds-secondary{font-family:Programme,Arial,sans-serif;min-height:44px;padding:11px 14px;font-size:13px;font-weight:600;background:transparent;border:1px solid #adb8a5;border-radius:var(--radius,5px);color:var(--ink,#101810);cursor:pointer}.ds-secondary:hover{background:#e8ece1}.ds-secondary:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
+      "css": ".ds-secondary{font-family:Programme,Arial,sans-serif;min-height:44px;padding:11px 14px;font-size:14px;font-weight:600;background:transparent;border:1px solid #adb8a5;border-radius:var(--radius,5px);color:var(--ink,#101810);cursor:pointer}.ds-secondary:hover{background:#e8ece1}.ds-secondary:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
     },
     {
       "name": "Distance field",
       "kind": "input",
       "refersTo": "input",
       "description": "Metric entry with native numeric validity.",
-      "html": "<label class=\"ds-field\">Distance (km)<input type=\"number\" min=\"0\" step=\"0.01\" placeholder=\"Optional\"></label>",
+      "html": "<label class=\"ds-field\">Distance (km)<input type=\"number\" min=\"0\" step=\"any\" inputmode=\"decimal\" placeholder=\"Optional\"></label>",
       "css": ".ds-field{font-family:Programme,Arial,sans-serif;display:block;margin:14px 0;font-size:13px;font-weight:600;color:#3b4833}.ds-field input{font-family:Programme,Arial,sans-serif;display:block;width:100%;min-height:46px;padding:11px 12px;background:#fff;border:1px solid #aeb9a6;border-radius:4px;color:var(--ink,#101810);margin-top:7px;font-size:16px;font-weight:400;caret-color:var(--blue,#183be9)}.ds-field input::placeholder{color:#626e5a}.ds-field input:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
     },
     {
@@ -261,7 +261,7 @@
       "name": "Programme tabs",
       "kind": "nav",
       "description": "Horizontally scrollable week selection with completion counts.",
-      "html": "<nav class=\"ds-weeks\" aria-label=\"Training weeks\"><button aria-pressed=\"true\"><strong>Week 01</strong><small>2 / 5 done</small></button><button aria-pressed=\"false\"><strong>Week 02</strong><small>0 / 5 done</small></button></nav>",
+      "html": "<nav class=\"ds-weeks\" aria-label=\"Training weeks\"><button aria-pressed=\"true\"><strong>Week 1</strong><small>0 / 5 done</small></button><button aria-pressed=\"false\"><strong>Week 2</strong><small>0 / 5 done</small></button></nav>",
       "css": ".ds-weeks{display:flex;gap:7px;overflow-x:auto;padding:4px 4px 10px}.ds-weeks button{font-family:Programme,Arial,sans-serif;min-height:44px;background:transparent;border:1px solid var(--line,#d3d8ce);border-radius:4px;color:var(--muted,#535d51);padding:11px 10px;text-align:left;flex:1;min-width:92px;cursor:pointer}.ds-weeks strong{display:block;color:var(--ink,#101810);font-size:14px;font-weight:650}.ds-weeks small{font-size:11px}.ds-weeks button:hover{background:#ecefe6}.ds-weeks button[aria-pressed=true]{background:var(--blue,#183be9);color:#dce5ff;border-color:var(--blue,#183be9)}.ds-weeks button[aria-pressed=true] strong{color:#fff}.ds-weeks button:focus-visible{outline:3px solid var(--blue,#183be9);outline-offset:4px;}"
     }
   ],

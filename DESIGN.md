@@ -17,18 +17,18 @@ typography:
   display:
     fontFamily: "Programme, Arial, sans-serif"
     fontSize: "58px"
-    fontWeight: 780
+    fontWeight: 600
     lineHeight: 1
-    letterSpacing: "-0.035em"
+    letterSpacing: "-0.025em"
   headline:
     fontFamily: "Programme, Arial, sans-serif"
     fontSize: "32px"
-    fontWeight: 700
+    fontWeight: 600
     letterSpacing: "-0.025em"
   title:
     fontFamily: "Programme, Arial, sans-serif"
-    fontSize: "21px"
-    fontWeight: 650
+    fontSize: "22px"
+    fontWeight: 600
     letterSpacing: "-0.025em"
   body:
     fontFamily: "Programme, Arial, sans-serif"
@@ -92,7 +92,7 @@ components:
 
 **Creative North Star: "Race programme"**
 
-A compact, energetic training companion. Strong cobalt fields, warm paper, confident Albert Sans and a pale lime action give the interface the directness of a race programme. Information stays compact and readable; crisp rules separate supporting records.
+A compact, energetic training companion. Strong cobalt fields, warm paper, confident Albert Sans and a pale lime action give the interface the directness of a race programme. Information stays compact and readable; crisp rules separate supporting records. Main screens show concise workout summaries; full instructions live behind View guide. Schedule setup and browser-local storage guidance live in Settings.
 
 **Key Characteristics:**
 - Cobalt fields with a lime logging action.
@@ -121,14 +121,14 @@ The palette balances saturated cobalt with warm, slightly green neutrals.
 **Display Font:** Albert Sans, embedded under the local CSS alias `Programme`, with Arial and sans-serif fallbacks.
 **Body Font:** the same family. No separate mono face is used.
 
-The variable family supplies both emphatic workout titles and compact supporting text. The Stride wordmark uses an italic treatment of the same face.
+The variable family supplies both emphatic workout titles and compact supporting text. The Stride wordmark uses an upright treatment of the same face.
 
 ### Hierarchy
-- **Display:** the frontmatter display role sets desktop workout titles; it becomes (53px) at the mobile breakpoint and (46px) on narrow phones.
+- **Display:** the frontmatter display role sets desktop workout titles; it becomes (44px) at the mobile breakpoint and (40px) on narrow phones.
 - **Headline:** page titles use the headline role, becoming (30px) on mobile. Section titles use (24px), then (23px).
 - **Title:** session headings use the title role, becoming (20px) on mobile.
 - **Body:** descriptive copy uses the body role and a maximum line length of (65ch); workout instructions use (16px), then (15px), with the same line height.
-- **Label:** compact controls use the label role. Navigation and status labels use (11px). Numeric summaries and recorded metrics use tabular numerals.
+- **Label:** compact controls use the label role. Navigation and status labels use (12–13px). Numeric summaries and recorded metrics use tabular numerals.
 
 ## Layout
 
@@ -170,7 +170,7 @@ Small status labels name planned, completed or skipped states. Guides use a segm
 
 ### Dialog and Feedback
 
-The paper dialog sits over a blue scrim. Opening it focuses the first field, traps keyboard focus and makes the app inert; Escape closes it and restores focus. Toasts appear above navigation and transition opacity and vertical position over (0.18s), using ease. Reduced-motion preference removes transitions.
+The paper dialog sits over a blue scrim. Opening it focuses the first field, traps keyboard focus and makes the app inert; Escape closes it and restores focus. Import and reset confirmations use the same dialog. Invalid input is shown inline; failed storage also leaves a persistent page alert. Toasts appear above navigation and transition opacity and vertical position over (0.18s), using ease. Reduced-motion preference removes transitions.
 
 ## Do's and Don'ts
 
